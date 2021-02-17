@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <script>
         function pobierznapis(){
@@ -13,5 +14,16 @@
     <body>
         <div> Bardzo lubie progeramowac </div>
         <button onclick="pobierznapis()">Przycisk</button>  
+
+        <!--WYKONANIE WYZEJ WYMIENIONEJ FUNKCJI W TECHNOLOGI JQUERY-->
+        <div id="info">Aplikacja by Dominik Bobiec</div>
+        <script>
+            $(document).ready(function(){
+                $("#info").click(function(){
+                    var div = $(this).html();
+                    alert(div);
+                });
+            });
+        </script>
     </body>
 </html>
